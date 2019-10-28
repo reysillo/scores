@@ -1,3 +1,9 @@
+<div class="alert alert-dark" role="alert">
+  <h3>
+  Enter the form <strong>X | 5/ | 9- </strong>
+  </h3>
+</div>
+
 <%= form_with(model: score, local: true) do |form| %>
   <% if score.errors.any? %>
     <div id="error_explanation">
@@ -11,57 +17,65 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :frame_1 %>
-    <%= form.text_field :frame_1 %>
-  </div>
+  <div class="row">
+    <div class="col-md-6">
 
-  <div class="field">
-    <%= form.label :frame_2 %>
-    <%= form.text_field :frame_2 %>
-  </div>
+      <div class="form-group">
+        <%= form.label :frame_1 %>
+        <%= form.text_field :frame_1, class: "form-control" %>
+      </div>
 
-  <div class="field">
-    <%= form.label :frame_3 %>
-    <%= form.text_field :frame_3 %>
-  </div>
+      <div class="form-group">
+        <%= form.label :frame_2 %>
+        <%= form.text_field :frame_2, class: "form-control" %>
+      </div>
 
-  <div class="field">
-    <%= form.label :frame_4 %>
-    <%= form.text_field :frame_4 %>
-  </div>
+      <div class="form-group">
+        <%= form.label :frame_3 %>
+        <%= form.text_field :frame_3, class: "form-control" %>
+      </div>
 
-  <div class="field">
-    <%= form.label :frame_5 %>
-    <%= form.text_field :frame_5 %>
-  </div>
+      <div class="form-group">
+        <%= form.label :frame_4 %>
+        <%= form.text_field :frame_4, class: "form-control" %>
+      </div>
 
-  <div class="field">
-    <%= form.label :frame_6 %>
-    <%= form.text_field :frame_6 %>
-  </div>
+      <div class="form-group">
+        <%= form.label :frame_5 %>
+        <%= form.text_field :frame_5, class: "form-control" %>
+      </div>
 
-  <div class="field">
-    <%= form.label :frame_7 %>
-    <%= form.text_field :frame_7 %>
-  </div>
+    </div>
+    <div class="col-md-6">
 
-  <div class="field">
-    <%= form.label :frame_8 %>
-    <%= form.text_field :frame_8 %>
-  </div>
+      <div class="form-group">
+        <%= form.label :frame_6 %>
+        <%= form.text_field :frame_6, class: "form-control" %>
+      </div>
 
-  <div class="field">
-    <%= form.label :frame_9 %>
-    <%= form.text_field :frame_9 %>
-  </div>
+      <div class="form-group">
+        <%= form.label :frame_7 %>
+        <%= form.text_field :frame_7, class: "form-control" %>
+      </div>
 
-  <div class="field">
-    <%= form.label :frame_10 %>
-    <%= form.text_field :frame_10 %>
-  </div>
+      <div class="form-group">
+        <%= form.label :frame_8 %>
+        <%= form.text_field :frame_8, class: "form-control" %>
+      </div>
 
-  <div class="actions">
-    <%= form.submit %>
+      <div class="form-group">
+        <%= form.label :frame_9 %>
+        <%= form.text_field :frame_9, class: "form-control" %>
+      </div>
+
+    <div class="form-group">
+      <%= form.label :frame_10 %>
+      <%= form.text_field :frame_10, class: "form-control" %>
+    </div>
+
+    <div class="actions">
+      <%= form.submit %>
+    </div>
   </div>
+</div>
 <% end %>
