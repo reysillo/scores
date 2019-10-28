@@ -12,6 +12,29 @@ Esta es una App, que produce la puntuación total para el juego de Bolos.
 - PosgreSql 9.*
 - TDD MiniTest
 
+### Instalación Proyecto
+- Clonar repositorio
+- Realizar configuracion Base de Datos
+```ruby
+config/database.yml
+```
+
+- Instalar dependencias 
+```ruby
+bundle install 
+```
+
+- Correr migraciones 
+```ruby
+rails db:migrate
+
+```
+
+- Inicializar Rails 
+```ruby
+rails s
+```
+
 ### Nº Items
 1. Patrón de diseño (api rest o mvc)
 2. Patrones de desarrollo
