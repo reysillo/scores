@@ -7,8 +7,8 @@ Esta es una App, que produce la puntuación total para el juego de Bolos.
 [Click here to see the demo](https://bowlingscoreapp.herokuapp.com)
 
 ### Stack: 
-- ruby 2.5.0 
-- rails 5.2.3
+- Ruby 2.5.0 
+- Rails 5.2.3
 - PosgreSql 9.*
 - TDD MiniTest
 
