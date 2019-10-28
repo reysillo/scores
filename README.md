@@ -1,24 +1,28 @@
-# README
+# Bowling score app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Aplicación de puntuación Bolos
 
-Things you may want to cover:
+Esta es una App, que produce la puntuación total para el juego de Bolos. 
 
-* Ruby version
+[Click here to see the demo](https://bowlingscoreapp.herokuapp.com)
 
-* System dependencies
+### Stack: 
+- ruby 2.5.0 
+- rails 5.2.3
+- PosgreSql 9.*
+- TDD MiniTest
 
-* Configuration
+### Nº Items
+1. Patrón de diseño (api rest o mvc)
+2. Patrones de desarrollo
+3. Manejo de Excepciones
+4. Código limpio
+5. ORM (BD)
+6. Controladores - formatos de respuesta 
+7. Documentación
+8. Pruebas Unitarias (TDD)
+9. Seguridad 
+10. Recursividad
+11. Objetivo del programa
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Adicionalmente: "Please also create a virtual machine or container using any technologies you choose, and deploy your service to AWS or Azure.  Provide any instructions needed to access."
