@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Scores</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Line</th>
+      <th>Frame 1</th>
+      <th>Frame 2</th>
+      <th>Frame 3</th>
+      <th>Frame 4</th>
+      <th>Frame 5</th>
+      <th>Frame 6</th>
+      <th>Frame 7</th>
+      <th>Frame 8</th>
+      <th>Frame 9</th>
+      <th>Frame 10</th>
+      <th>Total</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @scores.each do |score| %>
+      <tr>
+        <td><%= score.id %></td>
+        <td><%= score.frame_1 %></td>
+        <td><%= score.frame_2 %></td>
+        <td><%= score.frame_3 %></td>
+        <td><%= score.frame_4 %></td>
+        <td><%= score.frame_5 %></td>
+        <td><%= score.frame_6 %></td>
+        <td><%= score.frame_7 %></td>
+        <td><%= score.frame_8 %></td>
+        <td><%= score.frame_9 %></td>
+        <td><%= score.frame_10 %></td>
+        <td><%= score.total %></td>
+        <!--
+        <td><%= link_to 'Show', score %></td>
+        <td><%= link_to 'Edit', edit_score_path(score) %></td>
+        <td><%= link_to 'Destroy', score, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        -->
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Score', new_score_path %>
